@@ -206,8 +206,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="help-for-kate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="help-for-kate" type="462c0819:PsiDirectoryNode" />
+              <item name="node.js-education" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node.js-education" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,7 +221,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="C:\azolotarev\Kate\help-for-kate\node_modules\tslint" />
+    <property name="node.js.selected.package.tslint" value="C:\azolotarev\node.js-education\frontend\node.js-education\node_modules\tslint" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>

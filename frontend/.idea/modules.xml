@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/help-for-kate.iml" filepath="$PROJECT_DIR$/.idea/help-for-kate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/node.js-education.iml" filepath="$PROJECT_DIR$/.idea/node.js-education.iml" />
     </modules>
   </component>
 </project>
