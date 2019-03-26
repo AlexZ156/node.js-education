@@ -1,0 +1,36 @@
+<div class="login-wrapper">
+  <kt-logo></kt-logo>
+  <div class="login-holder">
+    <div class="input-group flex-nowrap input-group-lg mb-3">
+      <div class="input-group-prepend">
+        <kt-icon class="input-group-text" name="cat"></kt-icon>
+      </div>
+      <input
+        [(ngModel)]="name"
+        type="text"
+        placeholder="User name"
+        class="form-control"
+        [ngClass]="{'is-invalid': !formValid}"
+      >
+    </div>
+    <div class="input-group flex-nowrap input-group-lg mb-3">
+      <div class="input-group-prepend">
+        <kt-icon class="input-group-text" name="key"></kt-icon>
+      </div>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        placeholder="Password"
+        class="form-control"
+        [ngClass]="{'is-invalid': !formValid}"
+      >
+    </div>
+    <div class="d-flex justify-content-between">
+      <button (click)="signIn()" type="button" class="btn btn-primary btn-lg">Sing In</button>
+      <a routerLink="/login/signup">Sign Up</a>
+    </div>
+    <div class="alert alert-danger mt-3" *ngIf="!formValid">
+      Incorrect username or password.
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<ng-container *ngFor="let item of data; let i = index;">
+  <div *ngIf="currentIndex === i">
+    <h2>
+      {{ item.title }}
+      <button class="prev" (click)="prevSlide($event)">prev</button>
+      <button class="next" (click)="nextSlide($event)">next</button>
+    </h2>
+    <ng-container *ngIf="item.showAll">
+      <p *ngFor="let p of item.content">{{ p }}</p>
+    </ng-container>
+    <ng-container *ngIf="!item.showAll">
+      <p *ngFor="let p of readMoreData[i].content">{{ p }}</p>
+    </ng-container>
+    <a
+      href
+      class="badge badge-pill badge-primary read-more"
+      (click)="toggleSize($event, item)"
+      *ngIf="readMoreData[i].readMoreActive"
+    >{{ item.showAll ? 'Less' : 'Read more' }}</a>
+  </div>
+</ng-container>
+
+<ul>
+  <li
+    [ngClass]="{'active': currentIndex === i}"
+    *ngFor="let tem of data; let i = index;"
+    (click)="goToSlide(i)"
+  ></li>
+</ul>

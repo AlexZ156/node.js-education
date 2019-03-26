@@ -1,0 +1,10 @@
+<div
+  *ngFor="let item of data; let i = index"
+  class="slide"
+  [style.left.px]="slides[i]?.params.left"
+  [style.top.px]="slides[i]?.params.top"
+  [style.transform]="'scale(' + slides[i]?.params.scaleToAnimate + ')'"
+  (click)="goToSlide(i)"
+>
+  <div class="image-holder" [ngStyle]="{'background-image': 'url(' + data[i].img + ')'}"></div>
+</div>

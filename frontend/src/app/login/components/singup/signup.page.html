@@ -1,0 +1,60 @@
+<div class="login-wrapper">
+  <kt-logo></kt-logo>
+  <div class="login-holder">
+    <div class="mb-3">
+      <h2 class="mb-4">If you don't have an account, please create either go to <a routerLink="/login/signin">login page</a></h2>
+      <div class="input-group flex-nowrap input-group-lg">
+        <div class="input-group-prepend">
+          <kt-icon class="input-group-text" name="cat"></kt-icon>
+        </div>
+        <input
+          [(ngModel)]="name"
+          type="text"
+          placeholder="User name"
+          class="form-control"
+          [ngClass]="{'is-invalid': !nameValid}"
+        >
+      </div>
+      <div class="invalid-feedback" *ngIf="!nameValid">
+        Please choose a username.
+      </div>
+    </div>
+    <div class="mb-3">
+      <div class="input-group flex-nowrap input-group-lg">
+        <div class="input-group-prepend">
+          <kt-icon class="input-group-text" name="key"></kt-icon>
+        </div>
+        <input
+          [(ngModel)]="password"
+          type="password"
+          placeholder="Password"
+          class="form-control"
+          [ngClass]="{'is-invalid': !passwordValid}"
+        >
+      </div>
+      <div class="invalid-feedback" *ngIf="!passwordValid">
+        Password doesn't match or less than 6 characters.
+      </div>
+    </div>
+    <div class="mb-3">
+      <div class="input-group flex-nowrap input-group-lg">
+        <div class="input-group-prepend">
+          <kt-icon class="input-group-text" name="key"></kt-icon>
+        </div>
+        <input
+          [(ngModel)]="passwordConfirm"
+          type="password"
+          placeholder="Confirm password"
+          class="form-control"
+          [ngClass]="{'is-invalid': !passwordValid}"
+        >
+      </div>
+      <div class="invalid-feedback" *ngIf="!passwordValid">
+        Password doesn't match or less than 6 characters.
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button (click)="signUp()" type="button" class="btn btn-primary btn-lg">Sing Up</button>
+    </div>
+  </div>
+</div>

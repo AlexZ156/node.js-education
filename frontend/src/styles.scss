@@ -1,0 +1,32 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  background: #e2e2e2;
+  //min-width: 1000px;
+}
+
+kt-sing-in-page,
+kt-sing-up-page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  .invalid-feedback {
+    display: block;
+  }
+}
+
+.login-wrapper {
+  width: 400px;
+}
+
+.login-holder {
+  padding: 3rem;
+  background: #fff;
+  border-radius: 1rem;
+}

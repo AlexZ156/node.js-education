@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  min-width: 1000px;
+  padding-bottom: 4rem;
+}
+
+header {
+  display: block;
+  background: #363f48;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 960px;
+  width: 960px;
+}
+
+.ellipse-gallery-holder,
+kt-description-gallery {
+  width: 50%;
+}
+
+kt-description-gallery {
+  padding-right: 3rem;
+}
+
+.ellipse-gallery-holder {
+  padding: 0 50px;
+}

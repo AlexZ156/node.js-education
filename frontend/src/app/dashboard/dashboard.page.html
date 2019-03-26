@@ -1,0 +1,19 @@
+<header class="mb-5">
+  <div class="container d-flex justify-content-end">
+    <button (click)="logOut()" class="btn btn-primary">Log Out</button>
+  </div>
+</header>
+<div class="container d-flex">
+  <kt-description-gallery
+    [data]="ellipseGalleryData"
+    [currentIndex]="currentIndex"
+    (switchSlide)="goToSlide($event)"
+  ></kt-description-gallery>
+
+  <div class="ellipse-gallery-holder">
+    <kt-ellipse-gallery
+      [(currentIndex)]="currentIndex"
+      [data]="ellipseGalleryData"
+    ></kt-ellipse-gallery>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 2rem;
+  font-size: 10rem;
+  position: relative;
+
+  kt-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.eye {
+  position: absolute;
+  left: 2rem;
+  top: 4rem;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+
+  &.right {
+    left: auto;
+    right: 2rem;
+  }
+
+  span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+    border: 1px solid #fff;
+  }
+}
